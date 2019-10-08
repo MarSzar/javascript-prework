@@ -7,19 +7,23 @@
       div.innerHTML = msg;
       document.getElementById('messages').appendChild(div);
     }
-  
+   
     function clearMessages(){
       document.getElementById('messages').innerHTML = '';
     }
-  
+    
+    const PAPER = 1
+    const ROCK = 2
+    const SCISSORS = 3
+
     const getMoveName = function (argMoveId){
-      if(argMoveId == 1){
+      if(argMoveId === ROCK){
         return 'kamień';
       }
-      if(argMoveId == 2){
+      if(argMoveId === PAPER){
         return 'papier';
       }
-      if(argMoveId == 3){
+      if(argMoveId === SCISSORS){
         return 'nożyce';
       } 
       else {
