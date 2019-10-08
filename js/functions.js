@@ -33,11 +33,11 @@
     }
   
     const displayResult = function (argComputerMove, argPlayerMove){
-      if( argComputerMove == 'kamień' && argPlayerMove == 'papier' || argComputerMove == 'nożyce' && argPlayerMove == 'kamień' || argComputerMove == 'papier' && argPlayerMove == 'nożyce' ){ 
+      if( argComputerMove === 'kamień' && argPlayerMove === 'papier' || argComputerMove === 'nożyce' && argPlayerMove === 'kamień' || argComputerMove === 'papier' && argPlayerMove === 'nożyce' ){ 
         printMessage('Ty wygrywasz!');
-      } else if ( argComputerMove == 'papier' && argPlayerMove == 'kamień' || argComputerMove == 'kamień' && argPlayerMove == 'nożyce' || argComputerMove == 'nożyce' && argPlayerMove == 'papier'){
+      } else if ( argComputerMove === 'papier' && argPlayerMove === 'kamień' || argComputerMove === 'kamień' && argPlayerMove === 'nożyce' || argComputerMove === 'nożyce' && argPlayerMove === 'papier'){
         printMessage('Tym razem przegrywasz :(');
-      } else if ( argComputerMove == argPlayerMove ){
+      } else if ( argComputerMove === argPlayerMove ){
           printMessage('Remis!');
       } else {
         printMessage('Wykonaj swój ruch');
